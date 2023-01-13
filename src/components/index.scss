@@ -1,0 +1,42 @@
+.calculator__main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .calculator__container {
+    color: white;
+    margin-top: 100px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 6px;
+    height: 570px;
+    width: 310px;
+    ::placeholder {
+      color: white;
+      padding-left: 18px;
+    }
+    input {
+      background-color: grey;
+      border: 1px solid grey;
+      height: 220px;
+      font-size: 32px;
+      color: white;
+      width: 305px;
+      border-radius: 6px;
+    }
+  }
+  .calculator__numPad {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    .calculator__number {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 68px;
+      font-size: 32px;
+      cursor: pointer;
+    }
+    .calculator__number:hover {
+      background-color: rgb(79, 72, 72);
+    }
+  }
+}
